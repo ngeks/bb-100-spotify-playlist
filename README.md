@@ -28,49 +28,52 @@
 <p class="has-line-data" data-line-start="24" data-line-end="25"><img src="https://i.imgur.com/ykIQwT0.png" alt=""></p>
 </li>
 <li class="has-line-data" data-line-start="26" data-line-end="30">
-<p class="has-line-data" data-line-start="26" data-line-end="27">Copy your client id then paste it inside <code>main.py</code></p>
+<p class="has-line-data" data-line-start="26" data-line-end="27">Copy your <code>Client ID</code> and paste it inside <code>main.py</code> file.</p>
 <p class="has-line-data" data-line-start="28" data-line-end="29"><img src="https://i.imgur.com/MScJCzZ.png" alt=""></p>
 </li>
-<li class="has-line-data" data-line-start="30" data-line-end="34">
-<p class="has-line-data" data-line-start="30" data-line-end="31">Add redirect URI to application settings. If you do not have your own callback URI use <code>http://example.com</code></p>
-<p class="has-line-data" data-line-start="32" data-line-end="33"><img src="https://i.imgur.com/G3hW9mP.png" alt=""></p>
+<li class="has-line-data" data-line-start="30" data-line-end="35">
+<p class="has-line-data" data-line-start="30" data-line-end="32">Add redirect URI to application settings.<br>
+<em>Use <code>http://example.com</code> if you do not have a Redirect URI.</em></p>
+<p class="has-line-data" data-line-start="33" data-line-end="34"><img src="https://i.imgur.com/G3hW9mP.png" alt=""></p>
 </li>
-<li class="has-line-data" data-line-start="34" data-line-end="42">
-<p class="has-line-data" data-line-start="34" data-line-end="35">Add your browser path in <code>python.py</code>. See example below.</p>
-<p class="has-line-data" data-line-start="36" data-line-end="38"><strong>Firefox (Windows 11)</strong><br>
-<code>&quot;C:/Program Files/Firefox Developer Edition/firefox.exe&quot;</code></p>
-<p class="has-line-data" data-line-start="39" data-line-end="41"><strong>Google Chrome (Windows 11)</strong><br>
+<li class="has-line-data" data-line-start="35" data-line-end="43">
+<p class="has-line-data" data-line-start="35" data-line-end="36">Add your browser path in <code>python.py</code> file.</p>
+<p class="has-line-data" data-line-start="37" data-line-end="42"><em>Example:</em><br>
+<strong>Firefox (Windows 11)</strong><br>
+<code>&quot;C:/Program Files/Firefox Developer Edition/firefox.exe&quot;</code><br>
+<strong>Google Chrome (Windows 11)</strong><br>
 <code>&quot;C:/Program Files/Google/Chrome/Application/chrome.exe&quot;</code></p>
 </li>
-<li class="has-line-data" data-line-start="42" data-line-end="53">
-<p class="has-line-data" data-line-start="42" data-line-end="43">Run <code>python main.py</code></p>
-<p class="has-line-data" data-line-start="44" data-line-end="45"><img src="https://i.imgur.com/1fcV3E1.png" alt=""></p>
-<p class="has-line-data" data-line-start="46" data-line-end="47"><em>After entering a date your browser will open the spotify authorization request page.</em></p>
-<p class="has-line-data" data-line-start="48" data-line-end="49"><img src="https://i.imgur.com/XiyJW6N.png" alt=""></p>
-<p class="has-line-data" data-line-start="50" data-line-end="52"><em>Click the agree button.</em><br>
+<li class="has-line-data" data-line-start="43" data-line-end="55">
+<p class="has-line-data" data-line-start="43" data-line-end="45">Run the script.<br>
+<code>python main.py</code></p>
+<p class="has-line-data" data-line-start="46" data-line-end="47"><img src="https://i.imgur.com/1fcV3E1.png" alt=""></p>
+<p class="has-line-data" data-line-start="48" data-line-end="49"><em>After entering a date your browser will open the spotify authorization request page.</em></p>
+<p class="has-line-data" data-line-start="50" data-line-end="51"><img src="https://i.imgur.com/XiyJW6N.png" alt=""></p>
+<p class="has-line-data" data-line-start="52" data-line-end="54"><em>Click the agree button.</em><br>
 <em>The page will then redirect you to your redirect URI.</em></p>
 </li>
-<li class="has-line-data" data-line-start="53" data-line-end="65">
-<p class="has-line-data" data-line-start="53" data-line-end="54">Copy the access token from the page URL where you got redirected.</p>
-<p class="has-line-data" data-line-start="55" data-line-end="56"><strong>URL</strong></p>
-<pre><code class="has-line-data" data-line-start="57" data-line-end="59">http://example.com/#access_token=BQBKjzU45tSYvvIcrGDZPwpAofjaunbvXzAKMPBNvceW6pxFu0JN3NrFqrgxeab3jzNxJb6xbXLjI4FqfgDG2wEijb0ncmpuXG_-GREg_gY1fyMYf7q1ZaWYvNyh4X83DIMHe-nD-Cq8lz9Ep6us1hQhKXjZWO_x05Nru_4xZJESoNRvQNxjq4bazRONHZ_QhIeSsLDG6g&amp;token_type=Bearer&amp;expires_in=3600
+<li class="has-line-data" data-line-start="55" data-line-end="67">
+<p class="has-line-data" data-line-start="55" data-line-end="56">Copy the access token from the page URL where you got redirected.</p>
+<p class="has-line-data" data-line-start="57" data-line-end="58"><strong>URL</strong></p>
+<pre><code class="has-line-data" data-line-start="59" data-line-end="61">http://example.com/#access_token=BQBKjzU45tSYvvIcrGDZPwpAofjaunbvXzAKMPBNvceW6pxFu0JN3NrFqrgxeab3jzNxJb6xbXLjI4FqfgDG2wEijb0ncmpuXG_-GREg_gY1fyMYf7q1ZaWYvNyh4X83DIMHe-nD-Cq8lz9Ep6us1hQhKXjZWO_x05Nru_4xZJESoNRvQNxjq4bazRONHZ_QhIeSsLDG6g&amp;token_type=Bearer&amp;expires_in=3600
 </code></pre>
-<p class="has-line-data" data-line-start="60" data-line-end="61"><strong>ACCESS TOKEN</strong></p>
-<pre><code class="has-line-data" data-line-start="62" data-line-end="64">BQBKjzU45tSYvvIcrGDZPwpAofjaunbvXzAKMPBNvceW6pxFu0JN3NrFqrgxeab3jzNxJb6xbXLjI4FqfgDG2wEijb0ncmpuXG_-GREg_gY1fyMYf7q1ZaWYvNyh4X83DIMHe-nD-Cq8lz9Ep6us1hQhKXjZWO_x05Nru_4xZJESoNRvQNxjq4bazRONHZ_QhIeSsLDG6g
+<p class="has-line-data" data-line-start="62" data-line-end="63"><strong>ACCESS TOKEN</strong></p>
+<pre><code class="has-line-data" data-line-start="64" data-line-end="66">BQBKjzU45tSYvvIcrGDZPwpAofjaunbvXzAKMPBNvceW6pxFu0JN3NrFqrgxeab3jzNxJb6xbXLjI4FqfgDG2wEijb0ncmpuXG_-GREg_gY1fyMYf7q1ZaWYvNyh4X83DIMHe-nD-Cq8lz9Ep6us1hQhKXjZWO_x05Nru_4xZJESoNRvQNxjq4bazRONHZ_QhIeSsLDG6g
 </code></pre>
 </li>
-<li class="has-line-data" data-line-start="65" data-line-end="69">
-<p class="has-line-data" data-line-start="65" data-line-end="66">Paste your access token.</p>
-<p class="has-line-data" data-line-start="67" data-line-end="68"><img src="https://i.imgur.com/cyKv34h.png" alt=""></p>
+<li class="has-line-data" data-line-start="67" data-line-end="71">
+<p class="has-line-data" data-line-start="67" data-line-end="68">Paste your access token.</p>
+<p class="has-line-data" data-line-start="69" data-line-end="70"><img src="https://i.imgur.com/cyKv34h.png" alt=""></p>
 </li>
-<li class="has-line-data" data-line-start="69" data-line-end="73">
-<p class="has-line-data" data-line-start="69" data-line-end="70">Wait for the program to finish process.</p>
-<p class="has-line-data" data-line-start="71" data-line-end="72"><img src="https://i.imgur.com/emNCpVv.gif" alt=""></p>
+<li class="has-line-data" data-line-start="71" data-line-end="75">
+<p class="has-line-data" data-line-start="71" data-line-end="72">Wait for the program to finish process.</p>
+<p class="has-line-data" data-line-start="73" data-line-end="74"><img src="https://i.imgur.com/emNCpVv.gif" alt=""></p>
 </li>
 </ol>
-<h2 class="code-line" data-line-start=73 data-line-end=74 ><a id="License_73"></a>License</h2>
-<p class="has-line-data" data-line-start="74" data-line-end="75">Distributed under <a href="https://github.com/ngeks/bb-100-spotify-playlist/blob/main/LICENSE">MIT License</a>.</p>
-<h2 class="code-line" data-line-start=76 data-line-end=77 ><a id="Links_76"></a>Links</h2>
-<p class="has-line-data" data-line-start="77" data-line-end="80">Repository: <a href="https://github.com/ngeks/bb-100-spotify-playlist">https://github.com/ngeks/bb-100-spotify-playlist</a><br>
+<h2 class="code-line" data-line-start=75 data-line-end=76 ><a id="License_75"></a>License</h2>
+<p class="has-line-data" data-line-start="76" data-line-end="77">Distributed under <a href="https://github.com/ngeks/bb-100-spotify-playlist/blob/main/LICENSE">MIT License</a>.</p>
+<h2 class="code-line" data-line-start=78 data-line-end=79 ><a id="Links_78"></a>Links</h2>
+<p class="has-line-data" data-line-start="79" data-line-end="82">Repository: <a href="https://github.com/ngeks/bb-100-spotify-playlist">https://github.com/ngeks/bb-100-spotify-playlist</a><br>
 Twitter: <a href="https://twitter.com/ngeksdev">@ngeksdev</a><br>
 Email: <a href="mailto:ngeksdev@gmail.com">ngeksdev@gmail.com</a></p>
