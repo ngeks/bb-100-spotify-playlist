@@ -40,3 +40,47 @@ class Spotify:
         """Set access token and user id."""
         self.bearer_token = token
         self.set_uid()
+
+    def create_playlist(self, date):
+        """Create spotify playlist."""
+        url = BASE_URL + f"/v1/users/{self.uid}/playlists"
+        headers = {'Authorization': f"Bearer {self.bearer_token}", 'Content-Type': "application/json"}
+        data = {
+            'name': f"Billboard Top 100 ({date})",
+            'description': f"A playlist of billboard top 100 songs as of {date}.",
+            'public': False
+        }
+
+        resp = requests.post(
+            url,
+            headers=headers,
+            json=data
+        )
+        return resp.json()['id']
+
+    def search_track_id(self, track, year):
+        """Search for track. If found, get track id."""
+        url = BASE_URL + "/v1/search"
+        headers = {'Authorization': f"Bearer {self.bearer_token}"}
+        params = {'q': f"track:{track} year:{year}", 'type': "track"}
+
+        resp = requests.get(
+            url,
+            headers=headers,
+            params=params
+        )
+        return f"spotify:track:{resp.json()['tracks']['items'][0]['id']}"
+
+    def add_track_to_playlist(self, playlist_id, track):
+        """Add track to playlist."""
+        url = BASE_URL + f"/v1/playlists/{playlist_id}/tracks"
+        headers = {'Authorization': f"Bearer {self.bearer_token}"}
+        params = {'uris': track}
+
+        resp = requests.post(
+            url,
+            headers=headers,
+            params=params
+        )
+        return resp.json()['snapshot_id']
+    

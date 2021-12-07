@@ -43,7 +43,25 @@ def main():
         print("Invalid access token.")
         return
     else:
-        pass
+        playlist_id = sp.create_playlist(date)
+
+    year = date.split("-")[0]
+    tracks = []
+
+    print("\nSearching for tracks ids...")
+    for track in tracks_title:
+        try:
+            tracks.append(sp.search_track_id(track, year))
+        except IndexError:
+            print(f"\"{track}\" not found. Skipped.")
+            pass
+        else:
+            print(f"\"{track}\" added to queue.")
+
+    print("\nInsert tracks to playlist...\n")
+    for track in tracks:
+        sp.add_track_to_playlist(playlist_id, track)
+        print(f"{track} added to playlist: {playlist_id}")
 
 
 if __name__ == '__main__':
