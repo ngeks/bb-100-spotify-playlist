@@ -5,8 +5,8 @@
 <h2 class="code-line" data-line-start=6 data-line-end=7 ><a id="How_to_run_the_script_6"></a>How to run the script?</h2>
 <h3 class="code-line" data-line-start=7 data-line-end=8 ><a id="Requirements_7"></a>Requirements</h3>
 <ul>
-<li class="has-line-data" data-line-start="8" data-line-end="9">You must have <code>python</code> installed in your computer.</li>
-<li class="has-line-data" data-line-start="9" data-line-end="10">You must have <code>pip</code> installed in your computer.</li>
+<li class="has-line-data" data-line-start="8" data-line-end="9">You must have <code>python</code> installed on your computer.</li>
+<li class="has-line-data" data-line-start="9" data-line-end="10">You must have <code>pip</code> installed on your computer.</li>
 <li class="has-line-data" data-line-start="10" data-line-end="12">You must have a <a href="https://developer.spotify.com/">Spotify Developer</a> account.</li>
 </ul>
 <h3 class="code-line" data-line-start=12 data-line-end=13 ><a id="Instructions_12"></a>Instructions</h3>
@@ -50,21 +50,27 @@
 <em>Click the agree button.</em><br>
 <em>The page will then redirect you to your redirect URI.</em></p>
 </li>
-<li class="has-line-data" data-line-start="43" data-line-end="47">
-<p class="has-line-data" data-line-start="43" data-line-end="46">Copy the access token from the page URL where you got redirected.<br>
-<strong>URL</strong>: <code>http://example.com/#access_token=BQBKjzU45tSYvvIcrGDZPwpAofjaunbvXzAKMPBNvceW6pxFu0JN3NrFqrgxeab3jzNxJb6xbXLjI4FqfgDG2wEijb0ncmpuXG_-GREg_gY1fyMYf7q1ZaWYvNyh4X83DIMHe-nD-Cq8lz9Ep6us1hQhKXjZWO_x05Nru_4xZJESoNRvQNxjq4bazRONHZ_QhIeSsLDG6g&amp;token_type=Bearer&amp;expires_in=3600</code><br>
-<strong>Access Token</strong>: <code>BQBKjzU45tSYvvIcrGDZPwpAofjaunbvXzAKMPBNvceW6pxFu0JN3NrFqrgxeab3jzNxJb6xbXLjI4FqfgDG2wEijb0ncmpuXG_-GREg_gY1fyMYf7q1ZaWYvNyh4X83DIMHe-nD-Cq8lz9Ep6us1hQhKXjZWO_x05Nru_4xZJESoNRvQNxjq4bazRONHZ_QhIeSsLDG6g</code></p>
+<li class="has-line-data" data-line-start="43" data-line-end="54">
+<p class="has-line-data" data-line-start="43" data-line-end="45">Copy the access token from the page URL where you got redirected.<br>
+<strong>URL</strong></p>
+<pre><code class="has-line-data" data-line-start="46" data-line-end="48">http://example.com/#access_token=BQBKjzU45tSYvvIcrGDZPwpAofjaunbvXzAKMPBNvceW6pxFu0JN3NrFqrgxeab3jzNxJb6xbXLjI4FqfgDG2wEijb0ncmpuXG_-GREg_gY1fyMYf7q1ZaWYvNyh4X83DIMHe-nD-Cq8lz9Ep6us1hQhKXjZWO_x05Nru_4xZJESoNRvQNxjq4bazRONHZ_QhIeSsLDG6g&amp;token_type=Bearer&amp;expires_in=3600
+</code></pre>
+<p class="has-line-data" data-line-start="49" data-line-end="50"><strong>ACCESS TOKEN</strong></p>
+<pre><code class="has-line-data" data-line-start="51" data-line-end="53">BQBKjzU45tSYvvIcrGDZPwpAofjaunbvXzAKMPBNvceW6pxFu0JN3NrFqrgxeab3jzNxJb6xbXLjI4FqfgDG2wEijb0ncmpuXG_-GREg_gY1fyMYf7q1ZaWYvNyh4X83DIMHe-nD-Cq8lz9Ep6us1hQhKXjZWO_x05Nru_4xZJESoNRvQNxjq4bazRONHZ_QhIeSsLDG6g
+</code></pre>
 </li>
-<li class="has-line-data" data-line-start="47" data-line-end="50">
-<p class="has-line-data" data-line-start="47" data-line-end="49">Paste your access token.<br>
+<li class="has-line-data" data-line-start="54" data-line-end="57">
+<p class="has-line-data" data-line-start="54" data-line-end="56">Paste your access token.<br>
 <img src="https://i.imgur.com/cyKv34h.png" alt=""></p>
 </li>
-<li class="has-line-data" data-line-start="50" data-line-end="53">
-<p class="has-line-data" data-line-start="50" data-line-end="52">Wait for the program to finish process.<br>
+<li class="has-line-data" data-line-start="57" data-line-end="60">
+<p class="has-line-data" data-line-start="57" data-line-end="59">Wait for the program to finish process.<br>
 <img src="https://i.imgur.com/emNCpVv.gif" alt=""></p>
 </li>
 </ol>
-<h2 class="code-line" data-line-start=53 data-line-end=54 ><a id="Links_53"></a>Links</h2>
-<p class="has-line-data" data-line-start="54" data-line-end="57">Repository: <a href="https://github.com/ngeks/bb-100-spotify-playlist">https://github.com/ngeks/bb-100-spotify-playlist</a><br>
+<h2 class="code-line" data-line-start=60 data-line-end=61 ><a id="License_60"></a>License</h2>
+<p class="has-line-data" data-line-start="61" data-line-end="62">Distributed under <a href="https://github.com/ngeks/bb-100-spotify-playlist/blob/main/LICENSE">MIT License</a>.</p>
+<h2 class="code-line" data-line-start=63 data-line-end=64 ><a id="Links_63"></a>Links</h2>
+<p class="has-line-data" data-line-start="64" data-line-end="67">Repository: <a href="https://github.com/ngeks/bb-100-spotify-playlist">https://github.com/ngeks/bb-100-spotify-playlist</a><br>
 Twitter: <a href="https://twitter.com/ngeksdev">@ngeksdev</a><br>
 Email: <a href="mailto:ngeksdev@gmail.com">ngeksdev@gmail.com</a></p>
