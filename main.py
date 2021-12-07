@@ -1,7 +1,10 @@
 from datetime import datetime
 from bs4 import BeautifulSoup
 
+from spotify import Spotify
+
 BILLBOARD_URL = "https://www.billboard.com/charts/hot-100"
+CLIENT_ID = "YOUR_CLIENT_ID_HERE"
 
 
 def main():
@@ -29,7 +32,18 @@ def main():
         title = bs2.find("h3", class_="c-title").get_text().strip()
         tracks_title.append(title)
 
-    # print(tracks_title)
+    sp = Spotify()
+    sp.authorize(CLIENT_ID)
+
+    token = input("Enter access token: ")
+
+    try:
+        sp.authenticate(token)
+    except KeyError:
+        print("Invalid access token.")
+        return
+    else:
+        pass
 
 
 if __name__ == '__main__':
